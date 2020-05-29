@@ -25,14 +25,5 @@
                 "Sandeep"
             ],
             "answer" :"Trump"
-    },
-    {
-        "question" : "Whos the President of USA",
-            "Options":[
-                 "Trump",
-                "Vasco",
-                "Sandeep"
-            ],
-            "answer" :"Trump"
     }
 ]
