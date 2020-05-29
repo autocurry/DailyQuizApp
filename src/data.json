@@ -1,0 +1,38 @@
+[
+    {
+        "question" : "Whos the PM of India",
+            "Options":[
+                "Modi",
+                "Rahul",
+                "Nehru"
+                    ],
+            "answer" :"Modi"
+    },
+    {
+        "question" : "Whos CM of Kerala",
+            "Options":[
+                "P Vijayan",
+                "R Chennithala",
+                "K Surendran"
+            ],
+            "answer" :"P Vijayan"
+    },
+    {
+        "question" : "Whos the President of USA",
+            "Options":[
+                 "Trump",
+                "Vasco",
+                "Sandeep"
+            ],
+            "answer" :"Trump"
+    },
+    {
+        "question" : "Whos the President of USA",
+            "Options":[
+                 "Trump",
+                "Vasco",
+                "Sandeep"
+            ],
+            "answer" :"Trump"
+    }
+]
