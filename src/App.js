@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 import EndPage from './components/EndPage'
 import QuestionAnswerPage from './components/QuestionAnswerPage'
+import {PropTypes} from 'react'
+import data from './Data/data.json'
 
 class App extends React.Component{
   constructor(props){
@@ -12,10 +14,20 @@ class App extends React.Component{
       totalanswer:0,
       endreached:false
     }
+    this.myCallBack = this.myCallBack.bind(this)
     
   } 
 
-
+  myCallBack(value){
+    
+    
+    this.setState(
+      {
+        rightanswer:value
+      }
+    )
+  }
+  
     render(){
       
        return(
@@ -28,7 +40,7 @@ class App extends React.Component{
                 </div>
                 <div className='totalmarks'>
                   Total Questions: 
-                <input readOnly type='text' value={this.state.totalanswer}/>
+                <input readOnly type='text' value={data.length}/>
                 </div>
                 
                 </div >
@@ -39,7 +51,7 @@ class App extends React.Component{
                   <div className='questionandanswer'> 
                   {this.state.endreached
         ? <EndPage right={this.state.rightanswer} total={this.state.datalength}/>
-        : <QuestionAnswerPage />
+        : <QuestionAnswerPage myCallBack={this.myCallBack} />
       }
                 
                 </div>
